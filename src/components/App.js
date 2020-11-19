@@ -164,6 +164,7 @@ const App = () => {
                 {time}
                 </div>
             </div>
+            <div className="memory">{memory} {operator}</div>
             <div className="display">{value}</div>
             <div className="buttons">
                 <Button onButtonClick={handleButtonPress}  content="AC" type="function" />
