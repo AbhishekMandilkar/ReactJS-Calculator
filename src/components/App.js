@@ -55,18 +55,17 @@ const App = () => {
         if( content === "+") {
             if(operator !== null) {
                 if(operator === "+"){
-                    setValue(memory + parseFloat(value));
+                    setMemory(memory + parseFloat(value));
                 } else if(operator === "-") {
-                    setValue(memory - parseFloat(value));
+                    setMemory(memory - parseFloat(value));
                 } else if(operator === "×") {
-                    setValue(memory * parseFloat(value));
+                    setMemory(memory * parseFloat(value));
                 } else if(operator === "÷") {
-                    setValue(memory / parseFloat(value));
+                    setMemory(memory / parseFloat(value));
                 }
             } else {
                 setMemory(parseFloat(value));
             }
-            setMemory(parseFloat(value));
             setOperator("+");
             setValue("0");
             return;
@@ -75,18 +74,18 @@ const App = () => {
         if( content === "-") {
             if(operator !== null) {
                 if(operator === "+"){
-                    setValue(memory + parseFloat(value));
+                    setMemory(memory + parseFloat(value));
                 } else if(operator === "-") {
-                    setValue(memory - parseFloat(value));
+                    setMemory(memory - parseFloat(value));
                 } else if(operator === "×") {
-                    setValue(memory * parseFloat(value));
+                    setMemory(memory * parseFloat(value));
                 } else if(operator === "÷") {
-                    setValue(memory / parseFloat(value));
+                    setMemory(memory / parseFloat(value));
                 }
             } else {
                 setMemory(parseFloat(value));
             }
-            setMemory(parseFloat(value));
+            
             setOperator("-");
             setValue("0");
             return;
@@ -95,18 +94,18 @@ const App = () => {
         if( content === "×") {
             if(operator !== null) {
                 if(operator === "+"){
-                    setValue(memory + parseFloat(value));
+                    setMemory(memory + parseFloat(value));
                 } else if(operator === "-") {
-                    setValue(memory - parseFloat(value));
+                    setMemory(memory - parseFloat(value));
                 } else if(operator === "×") {
-                    setValue(memory * parseFloat(value));
+                    setMemory(memory * parseFloat(value));
                 } else if(operator === "÷") {
-                    setValue(memory / parseFloat(value));
+                    setMemory(memory / parseFloat(value));
                 }
             } else {
                 setMemory(parseFloat(value));
             }
-            setMemory(parseFloat(value));
+           
             setOperator("×");
             setValue("0");
             return;
@@ -115,18 +114,18 @@ const App = () => {
         if( content === "÷") {
             if(operator !== null) {
                 if(operator === "+"){
-                    setValue(memory + parseFloat(value));
+                    setMemory(memory + parseFloat(value));
                 } else if(operator === "-") {
-                    setValue(memory - parseFloat(value));
+                    setMemory(memory - parseFloat(value));
                 } else if(operator === "×") {
-                    setValue(memory * parseFloat(value));
+                    setMemory(memory * parseFloat(value));
                 } else if(operator === "÷") {
-                    setValue(memory / parseFloat(value));
+                    setMemory(memory / parseFloat(value));
                 }
             } else {
                 setMemory(parseFloat(value));
             }
-            setMemory(parseFloat(value));
+           
             setOperator("÷")
             setValue("0");
             return;
@@ -164,7 +163,7 @@ const App = () => {
                 {time}
                 </div>
             </div>
-            <div className="memory">{memory} {operator}</div>
+            <div className="memory">{memory} {operator} {value}</div>
             <div className="display">{value}</div>
             <div className="buttons">
                 <Button onButtonClick={handleButtonPress}  content="AC" type="function" />
