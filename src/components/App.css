@@ -1,0 +1,32 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+
+.App{
+    background-color: #214252;
+    color: white;
+   width:281px;
+    height: 609px;
+    padding: 10px;
+    /* border-radius: 25px; */
+    font-family: 'Open Sans', sans-serif;
+}
+.top{
+    height: 125px;
+    padding: 0 10px;
+}
+
+.display{
+    font-size: 65px;
+    margin-bottom: 10px;
+    font-weight:150;
+    text-align: right;
+
+}
+
+.buttons{
+    display: grid;
+    grid-gap:10px;
+    grid-template-rows:repeat(5, 1fr);
+    grid-template-columns: repeat(4, 1fr);
+
+}
+
